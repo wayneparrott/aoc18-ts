@@ -35,7 +35,7 @@ export abstract class AoCSolution {
                         break;
                 }
             });
-        } else {
+        } else { //default is to run both partA() and partB()
             this.options.a = true;
             this.options.b = true;
         }
