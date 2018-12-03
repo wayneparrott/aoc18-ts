@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- NodeJS ^8.9
-- npm ^5.6
+- NodeJS ^10.0
+- npm ^6.0
 
 ## Steps to Run inside CodeMix for Eclipse
 
