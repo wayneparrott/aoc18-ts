@@ -1,0 +1,16 @@
+{
+  "name": "aoc18-ts",
+  "version": "0.0.1",
+  "description": "Node-typescript solutions for Advent of Code 2018",
+  "main": "src/index.js",
+  "author": "Wayne Parrott",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "ts-node": "^7.0.0",
+    "typescript": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.0"
+  }
+}
