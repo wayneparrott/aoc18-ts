@@ -4,6 +4,7 @@
 node_modules
 
 # Editors
+.metadata
 
 # OS metadata
 .DS_Store
