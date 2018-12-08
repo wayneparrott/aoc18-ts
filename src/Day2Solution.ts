@@ -1,5 +1,5 @@
 import { AoCSolution } from "./AoCSolution";
-
+import {loadFile} from "./Utils";
 
 class Day2Solution extends AoCSolution {
 
@@ -17,7 +17,7 @@ class Day2Solution extends AoCSolution {
         // read each id, build a frequence table for each char in the id.
         // then find the double and triple matches
         let input: string[];
-        input = AoCSolution.loadFile(this.options.aFilename, AoCSolution.EOL);
+        input = loadFile(this.options.aFilename, AoCSolution.EOL);
         
         input.forEach((id: string) => {
 
@@ -52,7 +52,7 @@ class Day2Solution extends AoCSolution {
     //	id219: aixwcbzrmdvpsjfgllthdyioqe
     //	matching chars: aixwcbzrmdvpsjfgllthdyoqe
     partB() {
-        let ids: string[] = AoCSolution.loadFile(this.options.bFilename, AoCSolution.EOL);
+        let ids: string[] = loadFile(this.options.bFilename, AoCSolution.EOL);
 
         // pair-wise compare all ids to detect the 2 ids with 1 mismatch
         // accumulate matched chars between 2 ids in matchesBuffer

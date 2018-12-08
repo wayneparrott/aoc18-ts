@@ -1,7 +1,4 @@
 
-import * as fs from "fs";
-
-
 export abstract class AoCSolution {
 
     // split patterns for use with loadFile()
@@ -13,11 +10,6 @@ export abstract class AoCSolution {
         aFilename?: string,
         b: boolean,
         bFilename?: string
-    }
-
-    static loadFile(filename: string, separator?: string | RegExp): string[] {
-        let content = fs.readFileSync(filename).toString();
-        return separator ? content.split(separator) : [content];
     }
 
     constructor() {
@@ -66,13 +58,13 @@ export abstract class AoCSolution {
 //      // answer 
 //     partA() {
 //         let input: string[];
-//         input = AoCSolution.loadFile(this.options.aFilename, AoCSolution.EOL);
+//         input = loadFile(this.options.aFilename, AoCSolution.EOL);
 // 
 //     }
 //      // answer  
 //     partB() {
 //         let input: string[];
-//         input = AoCSolution.loadFile(this.options.bFilename, AoCSolution.EOL);
+//         input = loadFile(this.options.bFilename, AoCSolution.EOL);
 // 
 //     }
 // }

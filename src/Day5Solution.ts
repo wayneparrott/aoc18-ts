@@ -1,4 +1,5 @@
 import { AoCSolution } from "./AoCSolution";
+import {loadFile} from "./Utils";
 
 class Day5Solution extends AoCSolution {
 
@@ -42,7 +43,7 @@ class Day5Solution extends AoCSolution {
     // load the input polymer string and convert it to a charCode array
     loadpolymer(path: string) {
         let input: string[];
-        input = AoCSolution.loadFile(path);
+        input = loadFile(path);
 
         // split the line into an array of char ASCI codes
         let polymer = input[0].split(/(?:)/u).map(str1 => { return str1.charCodeAt(0) });

@@ -1,4 +1,5 @@
 import { AoCSolution } from "./AoCSolution";
+import {loadFile} from "./Utils";
 
 class Day6Solution extends AoCSolution {
 
@@ -129,7 +130,7 @@ class Day6Solution extends AoCSolution {
         this.maxy = 0;
 
         let input: string[];
-        input = AoCSolution.loadFile(this.options.aFilename, AoCSolution.EOL);
+        input = loadFile(this.options.aFilename, AoCSolution.EOL);
 
         for (let i=0; i < input.length; i++) {
             const regex = /^(\d+), (\d+)\s*\n?/gm;

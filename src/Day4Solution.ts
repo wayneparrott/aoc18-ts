@@ -1,5 +1,5 @@
 import { AoCSolution } from "./AoCSolution";
-
+import {loadFile} from "./Utils";
 
 enum ObservationType { START_SHIFT = 1, ASLEEP = 2, AWAKE = 3 };
 
@@ -27,7 +27,7 @@ class Day4Solution extends AoCSolution {
     // answer:  65489
     partA() {
         let input: string[];
-        input = AoCSolution.loadFile(this.options.aFilename, AoCSolution.EOL);
+        input = loadFile(this.options.aFilename, AoCSolution.EOL);
 
         let observations: {
             datetime: number,

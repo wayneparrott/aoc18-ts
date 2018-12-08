@@ -1,5 +1,5 @@
 import { AoCSolution } from "./AoCSolution";
-
+import {loadFile} from "./Utils";
 
 class Day3Solution extends AoCSolution {
 
@@ -21,7 +21,7 @@ class Day3Solution extends AoCSolution {
 
         // read claims
         let input: string[];
-        input = AoCSolution.loadFile(this.options.aFilename, AoCSolution.EOL);
+        input = loadFile(this.options.aFilename, AoCSolution.EOL);
 
         //input = [input[2]];
         let total = 0;
@@ -66,7 +66,7 @@ class Day3Solution extends AoCSolution {
         
         // read claims in to an array
         let input: string[];
-        input = AoCSolution.loadFile(this.options.bFilename, AoCSolution.EOL);
+        input = loadFile(this.options.bFilename, AoCSolution.EOL);
         input.forEach(claimString => {
             const regex = /^#(\d+)\s@\s(\d+).(\d+):\s(\d+)x(\d+)/gm;
             let match = regex.exec(claimString);
