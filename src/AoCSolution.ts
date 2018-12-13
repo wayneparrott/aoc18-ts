@@ -46,6 +46,7 @@ export abstract class AoCSolution {
 
 // example subclass
 // import { AoCSolution } from "./AoCSolution";
+// import {loadFile} from "./Utils";
 //
 // class DayXSolution extends AoCSolution {
 // 
