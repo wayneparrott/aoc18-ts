@@ -1,6 +1,6 @@
 import { AoCSolution } from "./AoCSolution";
 import { loadFile } from "./Utils";
-import * as _ from "lodash";
+//import * as _ from "lodash";
 
 
 interface RulePattern {

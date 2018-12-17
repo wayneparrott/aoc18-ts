@@ -1,7 +1,4 @@
 import { AoCSolution } from "./AoCSolution";
-import _ = require("lodash");
-
-
 
 class Day11Solution extends AoCSolution {
 
