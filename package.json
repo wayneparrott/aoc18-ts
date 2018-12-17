@@ -6,10 +6,10 @@
   "author": "Wayne Parrott",
   "license": "MIT",
   "dependencies": {
-    "@types/lodash": "^4.14.119",
+    "@types/mathjs": "^4.4.4",
     "fs": "0.0.1-security",
     "loadash": "^1.0.0",
-    "lodash": "^4.17.11",
+    "mathjs": "^5.4.0",
     "ts-node": "^7.0.0",
     "typescript": "^3.0.0"
   },
